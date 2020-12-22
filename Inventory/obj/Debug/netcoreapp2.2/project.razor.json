@@ -1872,18 +1872,8 @@
   "RootNamespace": "Inventory",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Ryland\\Desktop\\Inventory.Solution\\Inventory\\Views\\Items\\New.cshtml",
-      "TargetPath": "Views\\Items\\New.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ryland\\Desktop\\Inventory.Solution\\Inventory\\Views\\Categories\\Show.cshtml",
-      "TargetPath": "Views\\Categories\\Show.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ryland\\Desktop\\Inventory.Solution\\Inventory\\Views\\Items\\DeleteAll.cshtml",
-      "TargetPath": "Views\\Items\\DeleteAll.cshtml",
+      "FilePath": "c:\\Users\\Ryland\\Desktop\\Inventory.Solution\\Inventory\\Views\\Items\\Index.cshtml",
+      "TargetPath": "Views\\Items\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1892,18 +1882,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ryland\\Desktop\\Inventory.Solution\\Inventory\\Views\\Items\\Show.cshtml",
-      "TargetPath": "Views\\Items\\Show.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ryland\\Desktop\\Inventory.Solution\\Inventory\\Views\\Categories\\Index.cshtml",
-      "TargetPath": "Views\\Categories\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ryland\\Desktop\\Inventory.Solution\\Inventory\\Views\\Categories\\New.cshtml",
-      "TargetPath": "Views\\Categories\\New.cshtml",
+      "FilePath": "c:\\Users\\Ryland\\Desktop\\Inventory.Solution\\Inventory\\Views\\Items\\Create.cshtml",
+      "TargetPath": "Views\\Items\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
