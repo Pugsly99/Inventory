@@ -1,10 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Inventory.Models;
 
 namespace Inventory
 {
@@ -14,19 +12,15 @@ namespace Inventory
     {
       var builder = new ConfigurationBuilder()
           .SetBasePath(env.ContentRootPath)
-          .AddJsonFile("appsettings.json");
+          .AddEnvironmentVariables();
       Configuration = builder.Build();
     }
 
-    public IConfigurationRoot Configuration { get; set; }
+    public IConfigurationRoot Configuration { get; }
 
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
-
-      services.AddEntityFrameworkMySql()
-        .AddDbContext<InventoryContext>(options => options
-        .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
     }
 
     public void Configure(IApplicationBuilder app)
@@ -46,6 +40,7 @@ namespace Inventory
       {
         await context.Response.WriteAsync("Something went wrong!");
       });
+
     }
   }
 }
